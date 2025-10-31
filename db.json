@@ -1,0 +1,46 @@
+{
+  "tasks": [
+    {
+      "id": "4",
+      "title": "Hacer ejercicio 30 minutos",
+      "completed": false,
+      "priority": "Low",
+      "createdAt": "2025-10-27T08:00:00Z"
+    },
+    {
+      "id": "6",
+      "title": "Leer capítulo del libro",
+      "completed": true,
+      "priority": "Low",
+      "createdAt": "2025-10-28T20:00:00Z"
+    },
+    {
+      "id": "7",
+      "title": "Organizar escritorio",
+      "completed": false,
+      "priority": "Medium",
+      "createdAt": "2025-10-27T18:30:00Z"
+    },
+    {
+      "id": "8",
+      "title": "Planificar la semana",
+      "completed": true,
+      "priority": "Medium",
+      "createdAt": "2025-10-29T09:00:00Z"
+    },
+    {
+      "id": "10",
+      "title": "Limpiar bandeja de entrada",
+      "completed": false,
+      "priority": "Low",
+      "createdAt": "2025-10-27T16:45:00Z"
+    },
+    {
+      "id": "ef50",
+      "title": "Algooajdjudb",
+      "priority": "Low",
+      "completed": true,
+      "createdAt": "2025-10-31T22:23:12.998Z"
+    }
+  ]
+}
