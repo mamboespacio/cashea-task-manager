@@ -1,50 +1,56 @@
-# Welcome to your Expo app 👋
+# cashea-task-manager
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Tech Stack
 
-## Get started
+- **Expo SDK**: 52  
+- **React Native**: 0.76  
+- **Tailwind CSS**: via Nativewind
+- **State Management**: Zustand  
+- **API Mock**: JSON Server  
+- **Navigation**: Expo Router  
 
-1. Install dependencies
+## About
 
-   ```bash
-   npm install
-   ```
+Zustand was used for simplicity, performance, and low boilerplate.
+It allows managing the global state of tasks and the UI (filters, modals, dark mode) without the need for reducers or nested contexts.
 
-2. Start the app
+- Dark mode uses 'dark' class on the root level through Zustand
+- Tailwind configured with nativewind and darkMode: 'class'
+- No auth for code simplicity
+= JSON server only persist locally
+- Advanced network error missing
 
-   ```bash
-   npx expo start
-   ```
+## Setup & Installation
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+### 1 Clone Repo
 
 ```bash
-npm run reset-project
-```
+git clone https://github.com/tu-usuario/task-manager-app.git
+cd task-manager-app
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 2 Install dependencies
+npm install
 
-## Learn more
+### 3 Init Json Server
 
-To learn more about developing your project with Expo, look at the following resources:
+npx json-server db.json --port 3001
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
 
-## Join the community
+By default API runs on http://localhost:3001/tasks.
+For mobile devices replace with local IP
 
-Join our community of developers creating universal apps.
+### 4 Run app
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+iOS:
+
+npx expo run:ios
+
+
+Android:
+
+npx expo run:android
+
+Expo client:
+
+npx expo start
+
